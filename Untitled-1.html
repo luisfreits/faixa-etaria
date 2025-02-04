@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Descubra sua faixa etária</title>
+    </head>
+    <body>
+        <script>
+            let idade = Number(window.prompt('Me diga sua idade'))
+            if (idade < 13) {
+                msg = 'Você é uma criança';
+            } else if (idade < 18) {
+                msg = 'Você é adolescente';
+            } else {
+                msg = 'Você é adulto';
+            }
+
+            document.body.innerHTML += `<h2>${msg}</h2>`;
+        </script>
+    </body>
+</html>
